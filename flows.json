@@ -1,0 +1,48 @@
+[
+    {
+        "id": "33088288f2df18cc",
+        "type": "ui_gauge",
+        "z": "01d3509752bec234",
+        "name": "gauge RP",
+        "group": "77d861f0221fba9a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 600,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "77d861f0221fba9a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "7154a846822c6421",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7154a846822c6421",
+        "type": "ui_tab",
+        "name": "graph1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
