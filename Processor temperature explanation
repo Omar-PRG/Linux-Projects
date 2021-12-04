@@ -1,4 +1,4 @@
 First we install node js using the command sudo apt-get install nodejs-legacy. Once installation is complete, we install npm using
 sudo apt-get install npm. We can now proceed to node red installation, using sudo npm install -g --unsafe-perm node-red node-red-admin.
 Finally we type the command node-red and we type in the browser http://localhost:1880. Now the following video shows step by step how 
-to do it : https://www.youtube.com/watch?v=tTqgzg4zmwk. To se the values on a dashboard, in a new browser we type "Raspberry ip:1880/UI. Once we are done, we export the project in "all flows default".
+to do it : https://www.youtube.com/watch?v=tTqgzg4zmwk. To see the values on a dashboard, in a new browser we type "Raspberry ip:1880/UI. Once we are done, we export the project in "all flows default".
