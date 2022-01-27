@@ -27,8 +27,13 @@ and then enter. If we have an error we can edit our file using nano <filename> b
 we save and we type in terminal sh <filename> to execute our file. Since bc doesn't interpret float numbers we use scale=2 to calculate
 float numbers with 2 digits after floating point. 
 
+Project 2
+________________________________________
 
-
+   
+   
+First we type the command nano, to open a nano editor and we write our html code . Then we save it using ctrl+o and give it the name cv.html then enter and ctrl+x to quit. 
+Now using the command browse (filename) without parentheses, and being in the same directory, we can easily expose the cv.html file via web browser. 
 
 
 
