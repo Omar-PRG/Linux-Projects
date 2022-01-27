@@ -37,8 +37,10 @@ Now using the command browse (filename) without parentheses, and being in the sa
 
 
 
+Project 3
+________________________________________
 
-
+First we install node js using the command sudo apt-get install nodejs-legacy. Once installation is complete, we install npm using sudo apt-get install npm. We can now proceed to node red installation, using sudo npm install -g --unsafe-perm node-red node-red-admin.Finally we type the command node-red and we type in the browser http://localhost:1880. Now the following video shows step by step how to do it : https://www.youtube.com/watch?v=tTqgzg4zmwk. To see the values on a dashboard, in a new browser we type "Raspberry ip:1880/UI. Once we are done, we export the project in "all flows default".
 
 
 
@@ -118,6 +120,6 @@ For the series of project 5 tasks, we should first develop an application with n
 
 The second part of project 5 consists of building a tiny raspberry Pi3 image with buildroot. To do so, we start by downloafing buildroot using the command : " git clone git://git.buildroot.net/buildroot  ". Once we are done we cd to build root directory and type the command "make raspberrypi3_defconfig". if we want to get ssh and wifi working for example, we type the command "make menuconfig" which will open up a promt that allows us to configure, but in my case i'll not enter in details. Finally by typing the command" make -j8 " we will download the image in buildroot/output/images directory and this operation takes roughly 30 minutes . Now we can go to raspberry pi imager ,choose os then use custom, and use the image sdcard.img (159.4 mbs as shown in sdcard size.jpg) then choose the sd card and write. The boot up operation takes few secondes.
 
-Ressources:
+Resources:
 https://flows.nodered.org/node/node-red-contrib-epi-bluetooth
 https://www.youtube.com/watch?v=yxj8ynXXgbk
