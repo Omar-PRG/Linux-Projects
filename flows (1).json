@@ -1,0 +1,150 @@
+[
+    {
+        "id": "fb48d466828c04b6",
+        "type": "tab",
+        "label": "ble",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "838136b95256317b",
+        "type": "inject",
+        "z": "fb48d466828c04b6",
+        "name": "3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "hello",
+                "vt": "msg"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "7",
+        "payloadType": "json",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "3f48e13183832327"
+            ]
+        ]
+    },
+    {
+        "id": "8ced99f9ee967c31",
+        "type": "debug",
+        "z": "fb48d466828c04b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1dfba0ba2d973242",
+        "type": "ble-in",
+        "z": "fb48d466828c04b6",
+        "localName": "ble in",
+        "bluetooth": "79a84e22e661a1f3",
+        "service": "8c9ebd876cb5d571",
+        "characteristic": "e11ef5db-a52b-41e7-8b7a-aeb11aef86a7",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "8ced99f9ee967c31",
+                "cc95e8da66e5b993"
+            ]
+        ]
+    },
+    {
+        "id": "3f48e13183832327",
+        "type": "ble-notify",
+        "z": "fb48d466828c04b6",
+        "localName": "Ble notify",
+        "bluetooth": "79a84e22e661a1f3",
+        "service": "8c9ebd876cb5d571",
+        "characteristic": "8e0aa998-7928-4de4-aa14-07f25ece111e",
+        "x": 320,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cc95e8da66e5b993",
+        "type": "ui_gauge",
+        "z": "fb48d466828c04b6",
+        "name": "",
+        "group": "1c975ec63bfb2746",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 310,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "79a84e22e661a1f3",
+        "type": "ble-config",
+        "name": "My Bluetooth Device",
+        "retryLimit": "10",
+        "infoVendor": "",
+        "infoVendorType": "str",
+        "infoName": "",
+        "infoNameType": "str",
+        "infoSerial": "",
+        "infoSerialType": "str"
+    },
+    {
+        "id": "8c9ebd876cb5d571",
+        "type": "ble-service",
+        "name": "Primary Service",
+        "uuid": "c755e8f8"
+    },
+    {
+        "id": "1c975ec63bfb2746",
+        "type": "ui_group",
+        "name": "BLE3 message",
+        "tab": "7154a846822c6421",
+        "order": 3,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7154a846822c6421",
+        "type": "ui_tab",
+        "name": "graph1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
